@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+
+<body>
+
+  <div id="FIRST">
+    <div class="0" style="display:none">
+      <h3>Sunday</h3>
+
+    </div>
+    <div class="1" style="display:none">
+      <h3>Monday</h3>
+
+    </div>
+    <div class="2" style="display:none">
+      <h3>Tuesday</h3>
+
+    </div>
+    <div class="3" style="display:none">
+      <h3>Wednesday</h3>
+
+    </div>
+    <div class="4" style="display:none">
+      <h3>Thursday</h3>
+
+    </div>
+    <div class="5" style="display:none">
+      <h3>Friday</h3>
+
+    </div>
+    <div class="6" style="display:none">
+      <h3>Saturday</h3>
+
+    </div>
+  </div>
+
+  <div class="SECOND">
+    <div id="0" style="display:none">
+      <h3>Sunday2</h3>
+
+    </div>
+    <div class="1" style="display:none">
+      <h3>Monday2</h3>
+
+    </div>
+    <div class="2" style="display:none">
+      <h3>Tuesday2</h3>
+
+    </div>
+    <div class="3" style="display:none">
+      <h3>Wednesday2</h3>
+
+    </div>
+    <div class="4" style="display:none">
+      <h3>Thursday2</h3>
+
+    </div>
+    <div class="5" style="display:none">
+      <h3>Friday2</h3>
+
+    </div>
+    <div class="6" style="display:none">
+      <h3>Saturday2</h3>
+
+    </div>
+  </div>
+
+  <script>
+  function showhide() {
+    var d = new Date();
+    var s = document.getElementsByClassName(d.getDay());
+    for (var i = 0; i < s.length; i++) {
+      s[i].style.display = 'block';
+    }
+  }
+
+  showhide();
+
+  </script>
+</body>
+
+
+
+
+</html>
