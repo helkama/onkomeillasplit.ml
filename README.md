@@ -10,4 +10,4 @@ Todo:
 
 
 Server side todo:
-- Move server from  AMS TO HEL
+~~ Move server from  AMS TO HEL~~
