@@ -8,8 +8,9 @@ Todo:
 
 Maybe something for later:
 - Wordpress design
+
 Something for  later:
-- Think about easier ways of updating data
+- Think about easier ways of updating data (MAYBE A TABLE GENERATOR)
 - The index.html might bee too big and complicated so start looking on some server side solution for showing data
 
 
