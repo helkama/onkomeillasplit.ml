@@ -2,9 +2,11 @@
 
 Todo:
 - Add ze data
-- Make some kind of taulukko
+- Make some kind of taulukko (somewhat ok)
 - Bootstrap design stuff
-- Mobile friendly
+- Mobile friendly  (somewhat ok)
+
+Something for  later:
 - Think about easier ways of updating data
 - The index.html might bee too big and complicated so start looking on some server side solution for showing data
 
