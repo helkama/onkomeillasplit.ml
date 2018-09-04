@@ -6,6 +6,8 @@ Todo:
 - Bootstrap design stuff
 - Mobile friendly  (somewhat ok)
 
+Maybe something for later:
+- Wordpress design
 Something for  later:
 - Think about easier ways of updating data
 - The index.html might bee too big and complicated so start looking on some server side solution for showing data
@@ -13,3 +15,4 @@ Something for  later:
 
 Server side todo:
 - ~~Move server from  AMS TO HEL~~
+- Look on how to run wordpress on the server (Basically just install it)
