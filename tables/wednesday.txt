@@ -1,0 +1,124 @@
+<div class="mx-auto" style="width: 75%;" >
+  <h3> Lower seconday Split-lunch </h3>
+    <table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Kurssi</th>
+      <th scope="col">Opettaja</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="width: 50%">xLena05.3</th>
+      <td>PSk</td>
+
+    </tr>
+    <tr>
+      <th scope="row" ></th>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+</table>
+<h3> Split-lunch </h3>
+<table class="table table-sm table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Kurssi</th>
+      <th scope="col">Opettaja</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"  style="width: 50%">xLte01.1</th>
+      <td>OVi</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLhi02.2</th>
+      <td>SHi</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLmaa14.1</th>
+      <td colspan="2">HNo</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLrub07.2</th>
+      <td colspan="2">MPa</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLyh03.2 / xLyh4.2</th>
+      <td colspan="2">VKo</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLge01.1</th>
+      <td colspan="2">MMe</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLbi02.4 / Lbi3.4</th>
+      <td colspan="2">CFr</td>
+
+    </tr>
+  </tbody>
+</table>
+<h3>Normal-lunch</h3>
+<table class="table table-sm">
+<thead>
+<tr>
+  <th scope="col" style="width: 50%">Kurssi</th>
+  <th scope="col">Opettaja</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">xLäi06.2</th>
+  <td>HTe</td>
+
+</tr>
+<tr>
+  <th scope="row">xLps01.5</th>
+  <td>MiV</td>
+
+</tr>
+<tr>
+  <th scope="row">xLena02.2</th>
+  <td>RWe</td>
+
+</tr>
+<tr>
+  <th scope="row">xLäi01.3</th>
+  <td>JJu</td>
+
+</tr>
+<tr>
+  <th scope="row">xLfi01.4</th>
+  <td>LLa</td>
+
+</tr>
+<tr>
+  <th scope="row">xLäi08.4</th>
+  <td>Tly</td>
+
+</tr>
+<tr>
+  <th scope="row">xLena05.5</th>
+  <td>Vko</td>
+
+</tr>
+<tr>
+  <th scope="row"></th>
+  <td></td>
+
+</tr>
+</tbody>
+</table>
+</div>
