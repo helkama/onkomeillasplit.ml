@@ -1,0 +1,124 @@
+<div class="mx-auto" style="width: 75%;" >
+  <h3> Lower seconday Split-lunch </h3>
+    <table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Kurssi</th>
+      <th scope="col">Opettaja</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="width: 50%"></th>
+      <td></td>
+
+    </tr>
+    <tr>
+      <th scope="row" ></th>
+      <td></td>
+
+    </tr>
+
+  </tbody>
+</table>
+<h3> Split-lunch </h3>
+<table class="table table-sm table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Kurssi</th>
+      <th scope="col">Opettaja</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"  style="width: 50%">xLop03.1</th>
+      <td>LOi</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLeaa02 / eab204 / eab306</th>
+      <td>RWe</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLbi01.2</th>
+      <td colspan="2">ARa</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLfi02.2</th>
+      <td colspan="2">LLa</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLke02.2</th>
+      <td colspan="2">HHu</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLstt05.1</th>
+      <td colspan="2">SSn</td>
+
+    </tr>
+    <tr>
+      <th scope="row">xLfy01.3</th>
+      <td colspan="2">EHy</td>
+
+    </tr>
+  </tbody>
+</table>
+<h3>Normal-lunch</h3>
+<table class="table table-sm">
+<thead>
+<tr>
+  <th scope="col" style="width: 50%">Kurssi</th>
+  <th scope="col">Opettaja</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">xLsaa07 / sab208 / sab310</th>
+  <td>JSn</td>
+
+</tr>
+<tr>
+  <th scope="row">xLeab208 / eab310</th>
+  <td>APo</td>
+
+</tr>
+<tr>
+  <th scope="row">xLop03.3</th>
+  <td>RKa</td>
+
+</tr>
+<tr>
+  <th scope="row">xLlp01.4 / xLlt01.4</th>
+  <td>JLi</td>
+
+</tr>
+<tr>
+  <th scope="row">xLku01.6</th>
+  <td>JLa</td>
+
+</tr>
+<tr>
+  <th scope="row">xLke01.1</th>
+  <td>EMa</td>
+
+</tr>
+<tr>
+  <th scope="row">xLyh04.1</th>
+  <td>Vko</td>
+
+</tr>
+<tr>
+  <th scope="row">xLs206</th>
+  <td>Mal</td>
+
+</tr>
+</tbody>
+</table>
+</div>
