@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="manifest" href="manifest.json">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -14,11 +15,13 @@
 
 <div align="center" class="bg-dark text-white">
   <h1 align="center"> Onkomeillasplit.ml (beta)</h1>
-  <button id="1" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Maanantai</button>
-  <button id="2" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Tiistai</button>
-    <button id="3" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Keskiviikko</button>
-    <button id="4" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Torstai</button>
-      <button id="5" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Perjantai</button>
+  <div class="btn-group btn-group-sm">
+  <button id="1" style="margin-top: 2px;" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Maanantai</button>
+  <button id="2" style="margin-top: 2px;" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Tiistai</button>
+    <button id="3" style="margin-top: 2px;" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Keskiviikko</button>
+    <button id="4" style="margin-top: 2px;" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Torstai</button>
+      <button id="5" style="margin-top: 2px;" onClick="reply_click(this.id)" class="btn btn-primary btn-sm">Perjantai</button>
+</div>
       <br>
 <p class="text-dark">-</p>
 </div>
