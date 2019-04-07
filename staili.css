@@ -1,0 +1,9 @@
+#credits-text {
+position: absolute;
+text-align: center;
+
+left: 50%;
+font-size: 7pt;
+transform: translate(-50%, -50%);
+
+}
