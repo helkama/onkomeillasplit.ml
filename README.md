@@ -1,4 +1,4 @@
-# onkomeillasplit.ml
+# Onkomeillasplit.ml
 
 Onkomeillasplit is a simple HTML and JS-based web-application that displays the High School course specific lunchtimes at Kulosaaren Yhteiskoulu. The application is meant for both teachers and students.
 
