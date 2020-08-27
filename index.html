@@ -192,11 +192,9 @@
       <!-- MONDAY LUNCH -->
       <hr/>
        <h3>Menu for Monday</h3>
-
-       Soijanakkikastiketta / Soy sausage sauce   (*, A, L, M)
-       <br>Makkarakastiketta / Sausage sauce  (*, A, L, M)    contain pork
-       <br>Keitettyjä perunoita / Boiled potatoes  (*, G, L, M, Veg)
-
+				  <p id="mon">
+                  $Monday
+				  </p>
       </div>
 
 
@@ -309,14 +307,9 @@
 <!-- TUESDAY LUNCH -->
 <hr/>
 <h3>Menu for Tuesday</h3>
-
-Bataattisosekeittoa / Pureed sweet potato soup  (*, A, G, L)
-<br>
-Broileri-kookoskeittoa / Chicken and coconut soup  (*, G, L, M)
-<br>
-Juusto-viinirypälesalaattia / Cheese salad with grapes  (A, G, L)
-<br>
-Hedelmä / Fruit
+				  <p id="tue">
+                  $Tuesday
+				  </p>
 </div>
 
 <!-- End of the taulukko -->
@@ -428,9 +421,9 @@ Hedelmä / Fruit
       <!-- Wednesday LUNCH -->
       <hr/>
       <h3>Menu for Wednesday</h3>
-      Chili con vege / Vegetarian chili  (*, A, G, L, M, Veg, VS)
-      <br>Kirjolohi-seititomaattikastiketta / Rainbow trout and tomato sauce  (*, A, G, L, VS)
-      <br>Luomutäysjyväpastaa / Whole grain organic pasta  (*, A, L, M, Veg)
+				  <p id="wed">
+                  $Wednesday
+				  </p>
       </div>
 
     </div>
@@ -537,8 +530,9 @@ Hedelmä / Fruit
             <!-- Thursday LUNCH -->
             <hr/>
             <h3>Menu for Thursday</h3>
-            Kasvisbolognese-perunavuokaa / Soy bolognaise and potato casserole  (*, A, G, L, VS)
-       <br> Jauheliha-perunamusakaa / Minced meat and potato moussaka  (*, A, L)
+				  <p id="thu">
+                  $Thursday
+				  </p>
 
       </div>
 
@@ -650,10 +644,9 @@ Hedelmä / Fruit
                   <!-- Friday LUNCH -->
                   <hr/>
                   <h3>Menu for Friday</h3>
-                  Juurespihvejä / Root vegetable patties  (*, A, G, L, M, Veg)
-<br>Kalapyöryköitä / Fish patties  (*, A, G, L, M)
-<br>Sitruunajogurttikastiketta / Lemon and yoghurt sauce  (A, G, L)
-<br>Keitettyjä perunoita / Boiled potatoes  (*, G, L, M, Veg)
+				  <p id="fri">
+                  $Friday
+				  </p>
       </div>
 
     </div>
@@ -716,6 +709,24 @@ Hedelmä / Fruit
   };
   showhide();
 
+  </script>
+  <script>
+	lo = "be";
+	async function load() {
+		let url = 'https://eliittisafka.herokuapp.com/';
+		let obj = null;
+		
+		try {
+			obj = await (await fetch(url)).json();
+		} catch(e) {
+			console.log('error fetching menu from ' + url);
+		}
+		
+		console.log(obj.menu);
+		dates = ["mon", "tue", "wed", "thu", "fri", "weekend", "weekend"]
+		document.getElementById(dates[new Date().getDay()-1]).innerHTML = obj.menu.replace("\n", "<br \>");
+	}
+	load();
   </script>
 </body>
 
