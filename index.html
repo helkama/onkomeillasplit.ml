@@ -674,7 +674,7 @@
 	lo = "be";
 	let dates = ["mon", "tue", "wed", "thu", "fri", "weekend", "weekend"];
 	function updateMenu(dateIndex) {
-		document.getElementById(dates[dateIndex]).innerHTML = obj.menu[dateIndex].replace("\n", "<br \>");
+		document.getElementById(dates[dateIndex]).innerHTML = obj.menu[dateIndex].replace("\n", ", <br \>");
 //		console.log(document.getElementById(dates[dateIndex]).innerHTML);
 	}
 	async function load() {
