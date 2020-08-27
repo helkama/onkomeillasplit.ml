@@ -192,11 +192,9 @@
       <!-- MONDAY LUNCH -->
       <hr/>
        <h3>Menu for Monday</h3>
-
-       Soijanakkikastiketta / Soy sausage sauce   (*, A, L, M)
-       <br>Makkarakastiketta / Sausage sauce  (*, A, L, M)    contain pork
-       <br>Keitettyjä perunoita / Boiled potatoes  (*, G, L, M, Veg)
-
+				  <p id="mon">
+                  Loading...
+				  </p>
       </div>
 
 
@@ -309,14 +307,9 @@
 <!-- TUESDAY LUNCH -->
 <hr/>
 <h3>Menu for Tuesday</h3>
-
-Bataattisosekeittoa / Pureed sweet potato soup  (*, A, G, L)
-<br>
-Broileri-kookoskeittoa / Chicken and coconut soup  (*, G, L, M)
-<br>
-Juusto-viinirypälesalaattia / Cheese salad with grapes  (A, G, L)
-<br>
-Hedelmä / Fruit
+				  <p id="tue">
+                  Loading...
+				  </p>
 </div>
 
 <!-- End of the taulukko -->
@@ -428,9 +421,9 @@ Hedelmä / Fruit
       <!-- Wednesday LUNCH -->
       <hr/>
       <h3>Menu for Wednesday</h3>
-      Chili con vege / Vegetarian chili  (*, A, G, L, M, Veg, VS)
-      <br>Kirjolohi-seititomaattikastiketta / Rainbow trout and tomato sauce  (*, A, G, L, VS)
-      <br>Luomutäysjyväpastaa / Whole grain organic pasta  (*, A, L, M, Veg)
+				  <p id="wed">
+                  Loading...
+				  </p>
       </div>
 
     </div>
@@ -537,8 +530,9 @@ Hedelmä / Fruit
             <!-- Thursday LUNCH -->
             <hr/>
             <h3>Menu for Thursday</h3>
-            Kasvisbolognese-perunavuokaa / Soy bolognaise and potato casserole  (*, A, G, L, VS)
-       <br> Jauheliha-perunamusakaa / Minced meat and potato moussaka  (*, A, L)
+				  <p id="thu">
+                  Loading...
+				  </p>
 
       </div>
 
@@ -650,10 +644,9 @@ Hedelmä / Fruit
                   <!-- Friday LUNCH -->
                   <hr/>
                   <h3>Menu for Friday</h3>
-                  Juurespihvejä / Root vegetable patties  (*, A, G, L, M, Veg)
-<br>Kalapyöryköitä / Fish patties  (*, A, G, L, M)
-<br>Sitruunajogurttikastiketta / Lemon and yoghurt sauce  (A, G, L)
-<br>Keitettyjä perunoita / Boiled potatoes  (*, G, L, M, Veg)
+				  <p id="fri">
+                  Loading...
+				  </p>
       </div>
 
     </div>
@@ -676,8 +669,31 @@ Hedelmä / Fruit
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
   <script>
-
+	lo = "be";
+	let dates = ["mon", "tue", "wed", "thu", "fri", "weekend", "weekend"];
+	function updateMenu(dateIndex) {
+		document.getElementById(dates[dateIndex]).innerHTML = obj.menu[dateIndex].replace("\n", ", <br \>");
+//		console.log(document.getElementById(dates[dateIndex]).innerHTML);
+	}
+	async function load() {
+		let url = 'https://eliittisafka.herokuapp.com/';
+		obj = null;
+		
+		try {
+			obj = await (await fetch(url)).json();
+		} catch(e) {
+			console.log('error fetching menu from ' + url);
+		}
+		
+//		console.log(obj.menu);
+		updateMenu(new Date().getDay()-1);
+	}
+	load();
+  </script>
+  <script>
+  var obj = {};
   var b1 = document.getElementById('b1'), b2 = document.getElementById('b2');
   function showhide() {
     var d = new Date();
@@ -686,6 +702,7 @@ Hedelmä / Fruit
       s[i].style.display = 'block';
      localStorage.setItem("v", d.getDay());
     }
+	//updateMenu();
   }
    function reply_click(clicked_id) {
       var v = localStorage.getItem("v");
@@ -711,8 +728,10 @@ Hedelmä / Fruit
         x[i].style.display = 'none';
         localStorage.setItem("v", d);
         console.log();
+		//load();
       }
       }
+	  updateMenu(d-1);
   };
   showhide();
 
