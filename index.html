@@ -674,10 +674,10 @@
 	lo = "be";
 	let dates = ["mon", "tue", "wed", "thu", "fri", "weekend", "weekend"];
 	function updateMenu(dateIndex) {
-		if(dateIndex > 4){
+		if(dateIndex > 3){
 			return(false);
 		}
-		if(dateIndex == 0){
+		if(dateIndex == -1){
 			return(false);
 		}
 		document.getElementById(dates[dateIndex]).innerHTML = "<ul><li>" + obj.menu[dateIndex].replace(/\n/g, ", <br \><li>") + "</li></ul>";
