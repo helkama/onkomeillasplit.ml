@@ -677,6 +677,9 @@
 		if(dateIndex > 4){
 			return(false);
 		}
+		if(dateIndex == 0){
+			return(false);
+		}
 		document.getElementById(dates[dateIndex]).innerHTML = "<ul><li>" + obj.menu[dateIndex].replace(/\n/g, ", <br \><li>") + "</li></ul>";
 		return(true);
 //		console.log(document.getElementById(dates[dateIndex]).innerHTML);
