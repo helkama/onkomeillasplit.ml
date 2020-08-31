@@ -183,15 +183,6 @@
 		var table = `
 					  <h3></h3>
 					  <div class="mx-auto" style="width: 75%;" >
-						  <h3> Lower secondary Split-lunch</h3> 11:40-12:05
-						  <table class="table table-sm">
-						<thead>
-						  <tr>
-							<th scope="col">Kurssi</th>
-							<th scope="col">Opettaja</th>
-
-						  </tr>
-						</thead>
 						<tbody>
 						  <tr>
 							<th scope="row" style="width: 50%"></th>
@@ -215,9 +206,9 @@
 					`;
 		var splitTod = obj["sheets_splitLunch"][dateIndex-1];
 		var normTod = obj["sheets_normalLunch"][dateIndex-1];
-		console.log(splitTod);
+//		console.log(splitTod);
 		for(var i in splitTod){
-			console.log(splitTod[i]);
+//			console.log(splitTod[i]);
 			var classN  = splitTod[i].split("(")[0];
 			var teachN  = splitTod[i].split("(")[1].replace("(","").replace(")","");
 			table = table + `
@@ -241,7 +232,7 @@
 		  <tbody>
 		`;
 		for(var i in normTod){
-			console.log(normTod[i]);
+//			console.log(normTod[i]);
 			var classN  = normTod[i].split("(")[0];
 			var teachN  = normTod[i].split("(")[1].replace("(","").replace(")","");
 			table = table + `
