@@ -199,8 +199,29 @@ TL;DR Wash yo hands and be a hero 🙌</div>
 		if(dateIndex < 1){
 			return(false);
 		}
+		var splitTodLow = obj["sheets_lower_splitLunch"][dateIndex-1];
 		var table = `
-					  <h3></h3>
+					<div class="mx-auto" style="width: 75%;" >
+						  <h3> Lower secondary Split-lunch</h3> 11:40-12:05
+							<table class="table table-sm">
+						  <thead>
+							<tr>
+							  <th scope="col">Kurssi</th>
+							  <th scope="col">Opettaja</th>
+					`;
+		
+		for(var i in splitTodLow){
+//			console.log(splitTod[i]);
+			var classN  = splitTodLow[i].split("(")[0];
+			var teachN  = splitTodLow[i].split("(")[1].replace("(","").replace(")","");
+			table = table + `
+			  <tr>
+				<th scope="row"  style="width: 50%">` + classN + `</th>
+				<td>`+teachN+`</td>
+
+			  </tr>`;
+		}
+		table = table + `
 					  <div class="mx-auto" style="width: 75%;" >
 						<tbody>
 						  <tr>
@@ -212,7 +233,7 @@ TL;DR Wash yo hands and be a hero 🙌</div>
 
 						</tbody>
 					  </table>
-					  <h3> Split-lunch </h3>  12:05-12:30
+					  <h3> Upper-Secondary Split-lunch </h3>  12:05-12:30
 					  <table class="table table-sm table-dark">
 					  <thead>
 						  <tr>
@@ -239,7 +260,7 @@ TL;DR Wash yo hands and be a hero 🙌</div>
 		}
 		table = table + `
 		</table>
-		  <h3>Normal-lunch</h3> 12:30-12:55
+		  <h3>Upper-Secondary Normal-lunch</h3> 12:30-12:55
 		  <table class="table table-sm">
 		  <thead>
 		  <tr>
