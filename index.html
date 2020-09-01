@@ -262,7 +262,8 @@ TL;DR Wash yo hands and be a hero 🙌</div>
 			  </tr>`;
 		}
 		table = table + "</tbody></table>";
-		document.getElementsByClassName(dateIndex + "")[0].innerHTML = table;
+		var target = document.getElementsByClassName(dateIndex + "")[0];
+		target.innerHTML = target.innerHTML + table;
 		return(true);
 	}
 	async function load() {
