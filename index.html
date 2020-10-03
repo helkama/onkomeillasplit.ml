@@ -179,7 +179,8 @@ TL;DR Wash yo hands and be a hero 🙌</div>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   
   <script>
-	lo = "be";
+	let originals = ["", "", "", "", "", "", ""];
+	let times = [0, 0, 0, 0, 0, 0, 0]
 	let dates = ["mon", "tue", "wed", "thu", "fri", "weekend", "weekend"];
 	function updateMenu(dateIndex) {
 		if(dateIndex > 4){
@@ -193,6 +194,7 @@ TL;DR Wash yo hands and be a hero 🙌</div>
 //		console.log(document.getElementById(dates[dateIndex]).innerHTML);
 	}
 	function updateTables(dateIndex) {
+		var t = times[dateIndex];
 		if(dateIndex > 5){
 			return(false);
 		}
@@ -284,7 +286,15 @@ TL;DR Wash yo hands and be a hero 🙌</div>
 		}
 		table = table + "</tbody></table>";
 		var target = document.getElementsByClassName(dateIndex + "")[0];
-		target.innerHTML = target.innerHTML + table;
+		var pre = target.innerHTML;
+		if(t > 0){
+			pre = originals[dateIndex];
+		}
+		else{
+			originals[dateIndex] = pre;
+		}
+		target.innerHTML = pre + table;
+		times[dateIndex] = t + 1;
 		return(true);
 	}
 	async function load() {
